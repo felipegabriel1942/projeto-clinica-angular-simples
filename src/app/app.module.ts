@@ -5,6 +5,11 @@ import { AppComponent } from './app.component';
 import { PainelSimplesComponent } from './painel-simples/painel-simples.component';
 import { BarraNavegacaoComponent } from './barra-navegacao/barra-navegacao.component';
 import { BarraLateralComponent } from './barra-navegacao/barra-lateral/barra-lateral.component';
+import { ResumoComponent } from './resumo/resumo.component';
+import { ConsultaComponent } from './consulta/consulta.component';
+import { ConsultaPorEspecialidadeComponent } from './consulta/consulta-por-especialidade/consulta-por-especialidade.component';
+import { AppRoutingModule } from './app-routing.module';
+
 
 
 @NgModule({
@@ -12,10 +17,14 @@ import { BarraLateralComponent } from './barra-navegacao/barra-lateral/barra-lat
     AppComponent,
     PainelSimplesComponent,
     BarraNavegacaoComponent,
-    BarraLateralComponent
+    BarraLateralComponent,
+    ResumoComponent,
+    ConsultaComponent,
+    ConsultaPorEspecialidadeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
