@@ -10,6 +10,7 @@ import { ResumoComponent } from './resumo/resumo.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { ConsultaPorEspecialidadeComponent } from './consulta/consulta-por-especialidade/consulta-por-especialidade.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ResumoService } from './resumo/resumo.service';
 
 
 
@@ -28,7 +29,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ResumoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
