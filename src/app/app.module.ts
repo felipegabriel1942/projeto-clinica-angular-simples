@@ -11,6 +11,9 @@ import { ConsultaComponent } from './consulta/consulta.component';
 import { ConsultaPorEspecialidadeComponent } from './consulta/consulta-por-especialidade/consulta-por-especialidade.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ResumoService } from './resumo/resumo.service';
+import { FaturamentoComponent } from './faturamento/faturamento.component';
+import { ConsultaService } from './consulta/consulta.service';
+import { FaturamentoService } from './faturamento/faturamento.service';
 
 
 
@@ -22,14 +25,15 @@ import { ResumoService } from './resumo/resumo.service';
     BarraLateralComponent,
     ResumoComponent,
     ConsultaComponent,
-    ConsultaPorEspecialidadeComponent
+    ConsultaPorEspecialidadeComponent,
+    FaturamentoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ResumoService],
+  providers: [ResumoService, ConsultaService, FaturamentoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
