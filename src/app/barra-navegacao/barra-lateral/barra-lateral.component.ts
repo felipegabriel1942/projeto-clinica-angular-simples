@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarraLateralComponent implements OnInit {
 
+
+  menuAberto = true;
   constructor() { }
 
   ngOnInit() {
   }
 
+  toggle(){
+    this.menuAberto = !this.menuAberto;
+  }
 }
